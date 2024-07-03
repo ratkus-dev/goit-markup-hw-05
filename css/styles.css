@@ -102,6 +102,10 @@ video {
   vertical-align: baseline;
 }
 
+button {
+  padding: 0;
+}
+
 body {
   font-family: var(--font-main), sans-serif;
   font-size: 16px;
@@ -572,6 +576,10 @@ nav {
   background-color: var(--green);
 }
 
+.subscribe {
+  width: 100%;
+}
+
 .subscribe-form {
   display: flex;
   justify-content: flex-start;
@@ -619,8 +627,8 @@ nav {
   color: var(--white);
 }
 
-.subscribe {
-  width: 100%;
+.subscribe-btn-icon {
+  margin-left: 16px;
 }
 
 .subscribe-btn {
@@ -629,7 +637,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
   min-width: 165px;
   height: 40px;
 }
@@ -683,7 +690,7 @@ nav {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -692,9 +699,17 @@ nav {
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  fill: var(--white);
   background-color: var(--ocean);
   border: none;
+}
+
+.modal-close-btn-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover .modal-close-btn-icon,
+.modal-close-btn:focus .modal-close-btn-icon {
+  fill: var(--white);
 }
 
 .modal-content {
