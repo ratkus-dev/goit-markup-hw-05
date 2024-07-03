@@ -578,6 +578,7 @@ nav {
 
 .subscribe {
   width: 100%;
+  margin-left: 80px;
 }
 
 .subscribe-form {
@@ -586,7 +587,6 @@ nav {
   align-items: flex-end;
   gap: 24px;
   width: 100%;
-  margin-left: 80px;
 }
 
 .subscribe-title {
