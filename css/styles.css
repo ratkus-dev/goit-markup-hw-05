@@ -581,21 +581,26 @@ nav {
   margin-left: 80px;
 }
 
-.subscribe-label {
-  display: flex;
-  flex-direction: column;
-  font-weight: 500;
+.subscribe-title {
   font-size: 16px;
   letter-spacing: 0.02em;
   color: var(--white);
+  margin-bottom: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 24px;
 }
 
 .subscribe-input {
   padding: 7px 16px;
-  margin-top: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--white);
   border-radius: 4px;
-  min-width: 264px;
+  width: 264px;
+  height: 40px;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
@@ -611,7 +616,7 @@ nav {
 }
 
 .subscribe-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--white);
 }
 
 .subscribe {
@@ -625,6 +630,8 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  min-width: 165px;
+  height: 40px;
 }
 
 .modal-overlay {
@@ -635,12 +642,9 @@ nav {
   width: 100%;
   height: 100%;
   z-index: 999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   opacity: 0;
   pointer-events: none;
-  transition: display 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-overlay.is-open {
@@ -649,7 +653,10 @@ nav {
 }
 
 .modal {
-  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--dairy);
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
@@ -659,8 +666,9 @@ nav {
   padding: 24px;
   max-width: 408px;
   width: 100%;
-  max-height: 80%;
+  min-height: 584px;
   overflow-y: auto;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -674,7 +682,6 @@ nav {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition:
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
@@ -687,7 +694,7 @@ nav {
 .modal-close-btn:focus {
   fill: var(--white);
   background-color: var(--ocean);
-  border: 1px solid var(--ocean);
+  border: none;
 }
 
 .modal-content {
