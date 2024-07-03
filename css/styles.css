@@ -581,14 +581,6 @@ nav {
   margin-left: 80px;
 }
 
-.subscribe-form {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  gap: 24px;
-  width: 100%;
-}
-
 .subscribe-title {
   font-size: 16px;
   letter-spacing: 0.02em;
