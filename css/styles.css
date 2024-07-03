@@ -725,11 +725,11 @@ nav {
   margin-bottom: 16px;
 }
 
-.modal-field:not(:last-child) {
+.modal-field {
   margin-bottom: 8px;
 }
 
-.modal-field:l {
+.order-form div:last-child(-2) {
   margin-bottom: 16px;
 }
 
@@ -833,20 +833,20 @@ nav {
 }
 
 .input-accept:checked + .label-accept .label-accept-span {
-  background-color: var(--iris);
-  border-color: var(--iris);
+  background-color: var(--ocean);
+  border: none;
   fill: var(--cloud);
 }
 
 .input-accept:focus + .label-accept .label-accept-span {
-  border-color: var(--iris);
+  border-color: var(--ocean);
 }
 
 .accept-link {
   color: var(--iris);
+  text-decoration: underline;
 }
 
 .accept-box {
-  position: relative;
   margin-bottom: 24px;
 }
