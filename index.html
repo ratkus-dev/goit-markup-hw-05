@@ -420,68 +420,66 @@
       </div>
     </footer>
 
-    <div class="modal-overlay">
+    <div class="modal-overlay is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <div class="modal-content">
-          <p class="modal-title">Leave your contacts and we will call you back</p>
-          <form name="order-form" class="order-form" autocomplete="off" novalidate>
-            <div class="modal-field">
-              <label class="modal-label" for="user-name">Name</label>
-              <div class="modal-input-wrap">
-                <input class="modal-input" name="user-name" type="text" id="user-name" />
-                <svg class="input-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-user"></use>
-                </svg>
-              </div>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form name="order-form" class="order-form" autocomplete="off" novalidate>
+          <div class="modal-field">
+            <label class="modal-label" for="user-name">Name</label>
+            <div class="modal-input-wrap">
+              <input class="modal-input" name="user-name" type="text" id="user-name" />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
             </div>
-            <div class="modal-field">
-              <label class="modal-label" for="user-phone">Phone</label>
-              <div class="modal-input-wrap">
-                <input class="modal-input" name="user-phone" type="tel" id="user-phone" />
-                <svg class="input-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-phone"></use>
-                </svg>
-              </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-phone">Phone</label>
+            <div class="modal-input-wrap">
+              <input class="modal-input" name="user-phone" type="tel" id="user-phone" />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
             </div>
-            <div class="modal-field">
-              <label class="modal-label" for="user-email">Email</label>
-              <div class="modal-input-wrap">
-                <input class="modal-input" name="user-email" type="email" id="user-email" />
-                <svg class="input-icon" width="18" height="24">
-                  <use href="./images/icons.svg#icon-email"></use>
-                </svg>
-              </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-email">Email</label>
+            <div class="modal-input-wrap">
+              <input class="modal-input" name="user-email" type="email" id="user-email" />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
             </div>
-            <div class="modal-field">
-              <label class="modal-label" for="user-comment">Comment</label>
-              <textarea
-                class="user-comment"
-                name="user-comment"
-                rows="7"
-                id="user-comment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
-            <div class="accept-box">
-              <input class="input-accept visually-hidden" type="checkbox" id="accept" name="accept" value="accept" />
-              <label class="label-accept" for="accept">
-                <svg class="accept-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-ok"></use>
-                </svg>
-                <span
-                  >I accept the terms and conditions of the&nbsp;
-                  <a href="#" class="accept-link">Privacy Policy </a>
-                </span>
-              </label>
-            </div>
-            <button class="btn-submit btn primary-btn" type="submit">Send</button>
-          </form>
-        </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-comment">Comment</label>
+            <textarea
+              class="user-comment"
+              name="user-comment"
+              rows="7"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="accept-box">
+            <input class="input-accept visually-hidden" type="checkbox" id="accept" name="accept" value="accept" />
+            <label class="label-accept" for="accept">
+              <svg class="accept-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-ok"></use>
+              </svg>
+              <span
+                >I accept the terms and conditions of the&nbsp;
+                <a href="#" class="accept-link">Privacy Policy </a>
+              </span>
+            </label>
+          </div>
+          <button class="btn-submit btn primary-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
   </body>

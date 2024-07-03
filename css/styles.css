@@ -651,12 +651,16 @@ nav {
   z-index: 999;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
 }
 
 .modal-overlay.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .modal {
@@ -670,7 +674,7 @@ nav {
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 24px;
+  padding: 72px 24px 24px;
   max-width: 408px;
   width: 100%;
   min-height: 584px;
@@ -712,19 +716,13 @@ nav {
   fill: var(--white);
 }
 
-.modal-content {
-  max-height: calc(100% - 57px);
-  height: 100%;
-  overflow-y: auto;
-}
-
 .modal-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  margin: 48px auto 16px;
+  margin-bottom: 16px;
 }
 
 .modal-field {
@@ -747,10 +745,11 @@ nav {
   letter-spacing: 0.04em;
   border-radius: 4px;
   width: 100%;
-  padding: 8px 16px 8px 34px;
+  padding: 8px 16px 8px 38px;
   cursor: text;
   color: var(--navy-blue);
-  outline: none;
+  background-color: transparent;
+  outline: transparent;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
