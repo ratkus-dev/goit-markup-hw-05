@@ -420,7 +420,7 @@
       </div>
     </footer>
 
-    <div class="modal-overlay is-open">
+    <div class="modal-overlay">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -467,15 +467,21 @@
             ></textarea>
           </div>
           <div class="accept-box">
-            <input class="input-accept visually-hidden" type="checkbox" id="accept" name="accept" value="accept" />
-            <label class="label-accept" for="accept">
-              <svg class="accept-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-ok"></use>
-              </svg>
-              <span
-                >I accept the terms and conditions of the&nbsp;
-                <a href="#" class="accept-link">Privacy Policy </a>
+            <input
+              class="input-accept visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+            />
+            <label class="label-accept" for="user-privacy">
+              <span class="label-accept-span">
+                <svg class="accept-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-ok"></use>
+                </svg>
               </span>
+              I accept the terms and conditions of the&nbsp;
+              <a href="#" class="accept-link">Privacy Policy</a>
             </label>
           </div>
           <button class="btn-submit btn primary-btn" type="submit">Send</button>
