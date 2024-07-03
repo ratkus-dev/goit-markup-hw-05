@@ -812,8 +812,6 @@ nav {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: var(--light-slate);
-  display: flex;
-  align-items: center;
 }
 
 .label-accept-span {
